@@ -33,7 +33,7 @@ function App() {
 
       const data = await res.json();
       if (!data.message || !data.message.content) {
-        alert("❌ Backend response malformed");
+        alert("Backend response malformed");
         setLoading(false);
         return;
       }
@@ -42,7 +42,7 @@ function App() {
       setMessages([...newMessages, reply]);
       setStory(prev => [...prev, `🧑‍💬 You: ${userInput}`, `🤖 ${reply.content}`]);
     } catch (err) {
-      alert("❌ Error fetching from backend");
+      alert("Error fetching from backend");
       console.error(err);
     }
 
@@ -127,14 +127,13 @@ function App() {
             }}
             style={{ marginTop: '1rem' }}
           >
-            🔄 New Story
+            New Story
           </button>
         </>
       )}
     </div>
   );
 }
-console.log("🔑 API Key Loaded:", process.env.OPENROUTER_API_KEY ? "✅ Loaded" : "❌ Missing");
 
 
 export default App;
