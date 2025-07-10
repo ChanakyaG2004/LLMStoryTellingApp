@@ -26,8 +26,7 @@ Story Mode is a web app that generates immersive, decision-based stories using a
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ChanakyaG2004/story-mode.git
-cd story-mode
+git clone https://github.com/ChanakyaG2004/LLMStoryTellingApp.git
 ```
 
 ### 2. Install dependencies
@@ -88,20 +87,6 @@ Then go to [http://localhost:3000](http://localhost:3000)
 - The backend calls OpenRouter's API with the conversation context
 - The LLM responds with the next part of the story
 - The frontend displays the new message and continues the flow
-
----
-
-## Project Structure
-
-```
-story-mode/
-├── frontend/        # React app
-│   └── App.js       # Main UI logic
-├── backend/         # Express backend
-│   ├── server.js    # Handles OpenRouter API
-│   ├── .env         # Your API key (not committed)
-│   └── .env.example # Template for setup
-```
 
 ---
 
