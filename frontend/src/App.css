@@ -1,0 +1,116 @@
+
+
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --card-color: #ffffff;
+  --border-color: #ddd;
+  --input-bg: #fff;
+  --button-bg: #4f46e5;
+  --button-hover: #4338ca;
+  --secondary-bg: #e5e7eb;
+  --secondary-hover: #d1d5db;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f3f3f3;
+  --card-color: #2b2b2b;
+  --border-color: #3c3c3c;
+  --input-bg: #333;
+  --button-bg: #6366f1;
+  --button-hover: #818cf8;
+  --secondary-bg: #444;
+  --secondary-hover: #666;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.story-block {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.secondary-btn {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+.secondary-btn:hover {
+  background-color: var(--secondary-hover);
+}
+
+.toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.toggle:hover {
+  background-color: var(--button-hover);
+}
+
