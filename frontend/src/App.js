@@ -134,5 +134,7 @@ function App() {
     </div>
   );
 }
+console.log("🔑 API Key Loaded:", process.env.OPENROUTER_API_KEY ? "✅ Loaded" : "❌ Missing");
+
 
 export default App;
